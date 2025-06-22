@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta http-equiv="refresh" content="30" >
+        <meta name="viewport",content="width-device-width,initial-scale=1.0">
+        <title>My portfolio</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="mediaqueries.css"/>
+        <script src="https://kit.fontawesome.com/fc4134cede.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Neetu Dey</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#my_description">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#my_projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  
+                </ul>
+            </div>
+          
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Neetu Dey</div>
+            <div class="hamburger-menu" >
+                <div class="hamburger-icon" onclick="togglemenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="about" onclick="togglemenu()">About</a></li>
+                    <li><a href="experience" onclick="togglemenu()">Experience</a></li>
+                    <li><a href="projects" onclick="togglemenu()">Projects</a></li>
+                    <li><a href="contact" onclick="togglemenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="profile-wrapper">
+                <img src="./assets/profile.jpeg" alt="My profile"/>
+            </div>
+            <div class="text">
+                <div class="me">
+                    <p class="p1">Hi, I'm</p>
+                    <h1 class="name">Neetu Dey</h1>
+                    <p class="p2">Software Developer</p>
+                </div>
+                <div class="btn-container">
+                    <button class="btn-1" onclick="window.open('./assets/resume.pdf')">Open Resume</button>
+                    <button class="btn-2" onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div id="social-container">
+                    <img src="./assets/linkedin.png" alt="Linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/neetudey/'">
+                    <img src="./assets/github.png" alt="Linkedin" class="icon" onclick="location.href='https://github.com/ni2dey'">
+                </div>
+            </div>
+
+        </section>
+        <section id="my_description">
+            <p class="text_p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="description">
+                <div class="section_desc">
+                    <img src="./assets/profile2.jpg" alt="profile" class="about-pic">
+                </div>
+                <div class="about_section">
+                    <p>
+                        I'm a dedicated software developer with strong expertise in Python, SQL,HTML/CSS,javscript and 
+                        modern data-driven technologies such as Machine Learning, Data Science, and Power BI. My primary 
+                        focus lies in designing and developing robust software solutions that address real-world challenges.
+                        I have a solid foundation in building user-friendly applications, optimizing workflows, and integrating 
+                        data analytics to enhance functionality. With a passion for continuous learning, I strive to stay updated 
+                        with the latest tools and technologies to deliver high-quality, scalable software.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="my_skills">
+            <h1 class="skills">Skills</h1>
+            <div class="about_skills">
+                <p>HTML/CSS</p>
+                <p>Javascript</p>
+                <p>Python</p>
+                <p>SQL</p>
+                <p>Machine Learning</p>
+                <p>Deep Learning</p>
+                <p>Flask</p>
+                <p>MongoDB</p>
+                <p>AWS</p>
+                <p>Data Analytics</p>
+            </div>
+        </section>
+        <section id="my_education">
+            <h1 class="education">Education</h1>
+            <div class="about_education"> 
+                <div class="edu1">
+                    <h3 class="grade">10th</h3>
+                    <!-- <hr style="width:75%;text-align:left;margin-left:0"> -->
+                    <div class="ed">
+                        <p>Kashi Noble Academy</p>
+                        <p>Bhairahawa,Nepal</p>
+                        <p>CGPA: 3.75(out of 4)</p>
+                    </div>
+                </div>
+                <div class="edu2">
+                    <h3 class="grade">12th</h3>
+                    <!-- <hr style="width:75%;text-align:left;margin-left:0"> -->
+                    <div class="ed">
+                        <p >Sai Global Academy</p>
+                        <p>Bhairahawa,Nepal</p>
+                        <p >CGPA: 3.54(out of 4)</p>
+                    </div>
+                </div>
+                <div class="edu3">
+                    <h3 class="grade">B.Tech in Computer Science And Engineering</h3>
+                    <!-- <hr style="width:75%;text-align:left;margin-left:0"> -->
+                    <div class="ed">
+                        <p >Kalinga Institute of Industrial Technology</p>
+                        <p >Bhubaneswar,Odisha,India</p>
+                        <p >CGPA: 8.81(out of 10)</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section id="my_projects">
+            <h1 class="projects">Projects</h1>
+            <div class="about_projects"> 
+                <div class="project">
+                    <img src=".\assets\handgesture.png" class="hand" alt="sign">
+                    <!-- <hr style="width:100%;text-align:left;margin-left:0"> -->
+                    <p class="p1">Sign Language Detection Model</p>   
+                    <a href="https://github.com/ni2dey/Sign_Language_Detection.git" class="git"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="project">
+                    <img src=".\assets\bitcoin.jpg" class="hand" alt="sign">
+                    <!-- <hr style="width:100%;text-align:left;margin-left:0"> -->
+                    <p class="p1">AI-powered Cryptocurrency price predictor</p>
+                    <a href="https://github.com/ni2dey/AI-powered-Cryptocurrency-Price-predictor.git" class="git"><i class="fa-brands fa-github"></i></a> 
+                    
+                </div>
+                <div class="project">
+                    <img src=".\assets\budget.jpg" class="hand" alt="sign">
+                    <!-- <hr style="width:100%;text-align:left;margin-left:0"> -->
+                    <p class="p1">Budget Buddy</p>  
+                    <a href="https://github.com/ni2dey/Budget-Buddy.git" class="git"><i class="fa-brands fa-github"></i></a> 
+                </div> 
+                <div class="project">
+                    <img src=".\assets\books.jpg" class="hand" alt="sign">
+                    <!-- <hr style="width:100%;text-align:left;margin-left:0"> -->
+                    <p class="p1">Book Recommendation System</p>  
+                    <a href="https://github.com/ni2dey/Book_Recommendation_System.git" class="git"><i class="fa-brands fa-github"></i></a> 
+                </div>
+                <div class="project">
+                    <img src=".\assets\loan.jpg" class="hand" alt="sign">
+                    <!-- <hr style="width:100%;text-align:left;margin-left:0"> -->
+                    <p class="p1">Loan Approval Predictor</p>   
+                    <a href="https://github.com/ni2dey/Loan_Approval_predictor.git" class="git"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="project">
+                    <img src=".\assets\career.jpg" class="hand" alt="sign">
+                    <!-- <hr style="width:100%;text-align:left;margin-left:0"> -->
+                    <p class="p1">ASPIRO-Smart Career Guidance Assistant</p>   
+                    <a href="https://github.com/ni2dey/ASPIRO.git" class="git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <h1 class="experience">Experience</h1>
+            <div class="about_experience">
+                <div class="celebal">
+                    <div class="intern1">
+                        <p class="domain">Data Science Intern</p>
+                        <p>Duration:05-2024 to 08-2024 </p>
+                    </div>
+                    <p class="company">Celebal technologies</p>
+                    <a href="./assets/Celebal.pdf">Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="skillrank">
+                    <div class="intern2">
+                        <p class="domain">Software Developer Trainee</p>
+                        <p>Duration:10-2024 to 11-2024 </p>
+                    </div>
+                    <p class="company">SkillRank</p>
+                    <a href="./assets/skillrank.pdf">Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="about_contact">Contact Me</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i> neetudey500@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +91-9938684729</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="./assets/resume.pdf" download><button class="btn">Download CV</button></a>
+
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+        <footer class="footer">
+            <div class="footer-container">
+                <p>&copy; 2025 Neetu Dey. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="mailto:neetudey500@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/neetudey/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/ni2dey" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </footer>
+            
+
+        
+        <script src="script.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwGxGhalYZ3TYQQIDVcw9Vw9Lo4OZf_f-VrlpQwWBHmj3jVOe_lea61r76QpLZplRg/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>
